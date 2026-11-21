@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宅宅网|二次元同好聚集地|动漫游戏创意分享|免费加入</title>
+<meta name="keywords" content="宅宅网,二次元社区,动漫迷,游戏爱好者,创意分享">
+<meta name="description" content="宅宅网是面向二次元爱好者的兴趣社区，围绕动画、漫画、游戏与同人创作搭建交流空间，设有板块分类、内容推荐与社区公约，帮助新朋友快速找到同好，也在友善理性的氛围里分享作品、讨论剧情、记录灵感与收藏心得。">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="author" content="宅宅网内容团队">
+<meta name="theme-color" content="#0f1220">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="宅宅网">
+<meta property="og:title" content="兴趣相投的人在这里碰面">
+<meta property="og:description" content="从追番聊到同人创作，从游戏心得到收藏整理，一个以图文讨论与原创展示为主的兴趣空间，氛围温和，规则清晰。">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="兴趣相投的人在这里碰面">
+<meta name="twitter:description" content="动画、漫画、游戏与同人创作的话题聚合地，欢迎围观也欢迎动笔。">
+<style>
+:root{--bg:#0f1220;--panel:#171b2e;--panel2:#1d2238;--line:#2a3050;--text:#e9ecf8;--muted:#a6adc9;--accent:#6f8cff;--accent2:#ff7ab8;--ok:#5fd2a6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:#0b0e1a;padding:8px 14px;border-radius:0 0 8px 0;z-index:99}
+.skip:focus{left:0}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(15,18,32,.92);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.brand{font-size:20px;font-weight:700;letter-spacing:1px;color:var(--text);display:inline-flex;align-items:center;gap:8px}
+.brand:hover{text-decoration:none;color:var(--accent)}
+.brand-dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.nav-list{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.nav-list a{display:inline-block;padding:8px 12px;border-radius:8px;color:var(--muted);font-size:15px}
+.nav-list a:hover{background:var(--panel2);color:var(--text);text-decoration:none}
+.hero{padding:64px 0 48px;background:radial-gradient(900px 380px at 15% -10%,rgba(111,140,255,.24),transparent 62%),radial-gradient(700px 340px at 88% 0%,rgba(255,122,184,.18),transparent 60%);border-bottom:1px solid var(--line)}
+.eyebrow{margin:0 0 14px;color:var(--accent2);font-size:14px;letter-spacing:2px}
+h1{margin:0 0 18px;font-size:34px;line-height:1.35;letter-spacing:.5px}
+.lead{margin:0;max-width:760px;color:#cfd5ee;font-size:17px}
+.hero-points{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:26px 0 0;padding:0}
+.hero-points li{padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--muted);font-size:14px}
+.section{padding:52px 0;border-bottom:1px solid var(--line)}
+.section h2{margin:0 0 10px;font-size:26px;letter-spacing:.5px}
+.section h2::after{content:"";display:block;width:46px;height:3px;margin-top:12px;border-radius:2px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.section-lead{color:var(--muted);max-width:780px;margin:16px 0 26px}
+.two-col{display:grid;grid-template-columns:1.55fr 1fr;gap:26px;align-items:start;margin-top:22px}
+.two-col p{margin:0 0 14px;color:#cfd5ee}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.panel h3{margin:0 0 14px;font-size:17px}
+.facts{margin:0}
+.facts dt{color:var(--accent);font-size:14px;margin-top:12px}
+.facts dt:first-child{margin-top:0}
+.facts dd{margin:4px 0 0;color:var(--muted);font-size:15px}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;transition:border-color .2s ease,transform .2s ease}
+.card:hover{border-color:#3b4472;transform:translateY(-2px)}
+.card h3{margin:0 0 10px;font-size:18px}
+.card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+.card ul{margin:0;padding-left:18px;color:#b9c0dd;font-size:14px}
+.card li{margin:4px 0}
+.rule-list{margin:24px 0 0;padding-left:22px;color:#cfd5ee}
+.rule-list li{margin:10px 0}
+.rule-list strong{color:var(--text)}
+.table-wrap{margin-top:28px;overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;min-width:680px;background:var(--panel)}
+caption{caption-side:top;text-align:left;padding:14px 18px;color:var(--muted);font-size:14px;border-bottom:1px solid var(--line)}
+th,td{padding:13px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:15px;vertical-align:top}
+th{background:var(--panel2);color:#dfe4f8;font-weight:600;white-space:nowrap}
+td{color:var(--muted)}
+tbody tr:last-child td{border-bottom:0}
+.mech-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:24px}
+.mech{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:18px 20px}
+.mech:nth-child(even){border-left-color:var(--accent2)}
+.mech h3{margin:0 0 8px;font-size:17px}
+.mech p{margin:0;color:var(--muted);font-size:15px}
+.steps{margin:24px 0 0;padding:0;list-style:none;counter-reset:step}
+.steps li{position:relative;padding:16px 20px 16px 62px;margin-bottom:12px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:#cfd5ee}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:18px;top:16px;width:28px;height:28px;line-height:28px;text-align:center;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b0e1a;font-weight:700;font-size:14px}
+.tips{margin:20px 0 0;padding-left:22px;color:var(--muted)}
+.tips li{margin:8px 0}
+.faq-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px}
+.faq-head p{margin:0;color:var(--muted);font-size:15px}
+.btn{cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:9px 16px;border-radius:10px;font-size:15px;font-family:inherit}
+.btn:hover{border-color:var(--accent)}
+.faq-item{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-top:12px;padding:0}
+.faq-item summary{cursor:pointer;padding:16px 20px;font-weight:600;color:#e6eaf9;list-style:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";float:right;color:var(--accent);font-weight:700}
+.faq-item[open] summary::after{content:"-"}
+.faq-item p{margin:0;padding:0 20px 18px;color:var(--muted);font-size:15px}
+.notice{margin-top:28px;padding:18px 20px;border-radius:12px;background:rgba(95,210,166,.08);border:1px solid rgba(95,210,166,.35);color:#c8e9dd;font-size:15px}
+.site-footer{padding:34px 0 44px;color:var(--muted);font-size:14px}
+.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.site-footer p{margin:6px 0}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap}
+@media (max-width:900px){.two-col{grid-template-columns:1fr}.card-grid{grid-template-columns:repeat(2,1fr)}.mech-grid{grid-template-columns:1fr}}
+@media (max-width:620px){h1{font-size:26px}.section{padding:40px 0}.card-grid{grid-template-columns:1fr}.hero{padding:44px 0 36px}.nav-list a{padding:6px 9px;font-size:14px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="#top"><span class="brand-dot"></span>宅宅网</a>
+<nav aria-label="主导航">
+<ul class="nav-list">
+<li><a href="#about">站点介绍</a></li>
+<li><a href="#zones">核心板块</a></li>
+<li><a href="#rules">社区公约</a></li>
+<li><a href="#feed">推荐机制</a></li>
+<li><a href="#guide">新手指南</a></li>
+<li><a href="#faq">常见问题</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero" id="top">
+<div class="wrap">
+<p class="eyebrow">兴趣社交 · 创作分享 · 友好交流</p>
+<h1>在这里遇见同好，把热爱做成作品</h1>
+<p class="lead">宅宅网是一个围绕动画、漫画、游戏与同人创作搭建起来的兴趣社区。我们把讨论、创作、收藏与交流放在同一个屋檐下，让每一次好奇都能找到回应，让每一份灵感都有地方落脚。</p>
+<ul class="hero-points">
+<li>按兴趣标签聚合的内容广场</li>
+<li>面向创作者的图文发布空间</li>
+<li>公开透明的社区公约与处理机制</li>
+</ul>
+</div>
+</section>
+<section class="section" id="about">
+<div class="wrap">
+<h2>关于宅宅网</h2>
+<div class="two-col">
+<div>
+<p>宅宅网的名字取自爱好者之间亲切的自称。我们相信，喜欢同一部作品的人凑在一起，聊出来的东西往往比作品本身更耐看：有人写长评拆解分镜，有人整理年表与设定，有人把角色画成自己的样子，也有人只是想找个人一起吐槽最新一集。</p>
+<p>因此在内容组织上，站点不做单一的资讯堆叠，而是把讨论、创作与收藏三条线并列摆放。想看观点可以进讨论区，想动笔可以进创作区，只想安静翻图也能在展示区逛很久。每个板块都配有清晰的标签体系，方便按作品名、角色名或题材找到同类内容。</p>
+<p>我们也清楚，兴趣社区最怕两件事：一是吵，二是乱。为此站点把社区公约写在显眼位置，对剧透、转载授权、商业推广等容易起争议的环节给出明确要求，并在处理结果上保持可追溯。规则不为了限制表达，只是为了让愿意认真说话的人待得下去。</p>
+<p>站点的内容更新依赖每一位参与者的日常分享，编辑团队负责把分散在各板块的好内容挑出来，按主题重新编排成专题与清单。你随手写下的一段感想，可能就是别人入坑的起点。</p>
+</div>
+<aside class="panel">
+<h3>社区定位一览</h3>
+<dl class="facts">
+<dt>面向人群</dt>
+<dd>动画、漫画、游戏与同人创作的爱好者，以及愿意了解这些内容的新朋友</dd>
+<dt>内容形态</dt>
+<dd>图文长评、短评随笔、原创作品展示、话题讨论、设定整理与收藏清单</dd>
+<dt>交流基调</dt>
+<dd>友善、理性、尊重原创与版权，允许观点不同，不允许人身攻击</dd>
+<dt>组织方式</dt>
+<dd>以标签与主题聚合内容，配合编辑精选与热度排序</dd>
+<dt>更新节奏</dt>
+<dd>由社区成员持续贡献，编辑团队按日整理与编排</dd>
+</dl>
+</aside>
+</div>
+</div>
+</section>
+<section class="section" id="zones">
+<div class="wrap">
+<h2>核心板块</h2>
+<p class="section-lead">六个常设板块覆盖讨论、创作与收藏三类需求，每个板块下再按作品与题材细分标签，方便按兴趣直达。</p>
+<div class="card-grid">
+<article class="card">
+<h3>动画讨论区</h3>
+<p>以季度为单位组织话题，逐集讨论与整季复盘并存，鼓励写清楚观点依据，而不是只留一句结论。</p>
+<ul>
+<li>逐集观感与分镜拆解</li>
+<li>整季评价与选片推荐</li>
+<li>制作阵容与幕后资料整理</li>
+</ul>
+</article>
+<article class="card">
+<h3>漫画与同人</h3>
+<p>连载追更、单行本考据与同人创作都在这里。原创作品需标注是否使用他人设定，二次创作需说明授权情况。</p>
+<ul>
+<li>连载追更与剧情推测</li>
+<li>原创短篇与四格</li>
+<li>同人图文与设定补完</li>
+</ul>
+</article>
+<article class="card">
+<h3>游戏交流区</h3>
+<p>从单机剧情到多人合作，从攻略心得到版本讨论，重点在于把经验讲清楚，让后来的人少走弯路。</p>
+<ul>
+<li>玩法心得与配装思路</li>
+<li>剧情解析与角色讨论</li>
+<li>版本更新后的体验记录</li>
+</ul>
+</article>
+<article class="card">
+<h3>角色与摄影</h3>
+<p>服装制作、妆面记录、外景选择与后期思路都可以在这里交流，出镜与拍摄双方的权利义务需要事先讲明。</p>
+<ul>
+<li>服装道具制作记录</li>
+<li>外景与布光经验</li>
+<li>后期调色与成片复盘</li>
+</ul>
+</article>
+<article class="card">
+<h3>音乐与声音</h3>
+<p>主题曲、配乐与声优表现是常聊的话题，也欢迎分享翻唱与演奏作品，使用他人编曲需获得许可。</p>
+<ul>
+<li>主题曲与配乐赏析</li>
+<li>声优演出片段讨论</li>
+<li>翻唱与器乐演绎</li>
+</ul>
+</article>
+<article class="card">
+<h3>周边与收藏</h3>
+<p>记录收藏过程、整理展示方式、交流保管经验。涉及转让的内容需如实描述状况，并遵守平台规则。</p>
+<ul>
+<li>收藏整理与陈列方法</li>
+<li>保养与修复经验</li>
+<li>个人闲置转让说明</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="rules">
+<div class="wrap">
+<h2>社区公约与内容规范</h2>
+<p class="section-lead">公约适用于所有板块的标题、正文、图片与评论。发布内容即视为已知悉并同意以下条款，违规内容会按统一标准处理。</p>
+<ol class="rule-list">
+<li><strong>尊重他人。</strong>针对观点可以有分歧，针对个人不允许攻击、嘲讽、贴标签或进行群体歧视。争论时请围绕内容本身展开。</li>
+<li><strong>尊重原创。</strong>转载、搬运、二次创作须获得授权或符合授权条款，并在显著位置注明原作者与出处；无法确认来源的内容不予发布。</li>
+<li><strong>主动标注剧透。</strong>涉及关键剧情、结局、角色生死等信息的帖子，需在标题或标签中写明剧透范围，避免影响他人观看体验。</li>
+<li><strong>如实描述。</strong>涉及作品评价、商品状况、活动经历的描述应基于真实体验，不夸大、不虚构、不使用误导性标题。</li>
+<li><strong>拒绝商业推广。</strong>未经允许不得发布代购、预售、引流、招商等商业信息，也不得以个人分享名义植入推广内容。</li>
+<li><strong>保护隐私。</strong>不公开他人的真实姓名、联系方式、住址与未经同意的照片，涉及未成年人的内容一律从严处理。</li>
+<li><strong>内容合规。</strong>不发布违反法律法规与公序良俗的内容，包括但不限于暴力、赌博、色情及侵犯他人权益的信息。</li>
+<li><strong>理性反馈。</strong>发现违规内容可通过页面反馈入口说明情况，不鼓励以围攻、刷屏等方式自行处理。</li>
+</ol>
+<div class="table-wrap">
+<table>
+<caption>常见内容类型的发布要求与处理方式</caption>
+<thead>
+<tr><th>内容类型</th><th>发布要求</th><th>违规处理</th></tr>
+</thead>
+<tbody>
+<tr><td>原创作品展示</td><td>需为本人创作，使用外部素材须注明来源与授权情况</td><td>来源不明的作品提示补充说明，无法说明的转为仅自己可见</td></tr>
+<tr><td>转载与搬运</td><td>须取得授权或符合原作者公开的转载条款，并完整保留署名</td><td>未经授权的内容下架，重复发布将限制发布权限</td></tr>
+<tr><td>剧情讨论</td><td>标题或标签需标明剧透范围，正文前留出提示</td><td>未标注的帖子由编辑补充提示标签，多次发生将限制推荐</td></tr>
+<tr><td>闲置转让</td><td>仅限个人闲置，需如实描述品相、价格与交易方式</td><td>涉及代购、预售或批量售卖的内容移除并记录</td></tr>
+<tr><td>资源信息</td><td>仅允许分享官方渠道与合法授权信息</td><td>侵权资源信息一律移除，情节严重的限制账号功能</td></tr>
+<tr><td>评论与回复</td><td>围绕内容表达观点，不使用侮辱性表达</td><td>攻击性评论折叠或删除，反复出现将限制发言</td></tr>
+</tbody>
+</table>
+</div>
+<div class="notice">处理结果会说明依据条款与整改方向，作者可在结果通知中提交说明材料。对处理有异议时，按同一入口再次反馈即可，不重复计次。</div>
+</div>
+</section>
+<section class="section" id="feed">
+<div class="wrap">
+<h2>内容更新与推荐机制</h2>
+<p class="section-lead">推荐不追求把所有人推到同一个热点上，而是尽量把内容送到真正关心它的人面前。机制公开，规则稳定，避免忽冷忽热。</p>
+<div class="mech-grid">
+<div class="mech">
+<h3>标签优先匹配</h3>
+<p>每篇内容发布时需选择作品、题材与内容形式三类标签。系统依据标签把内容归入对应聚合页，读者可从任意标签页持续往下浏览，形成稳定的兴趣路径。</p>
+</div>
+<div class="mech">
+<h3>编辑精选</h3>
+<p>编辑团队每天从各板块挑选结构完整、信息密度高的内容，编入专题与清单。精选看重的是表达是否清楚、资料是否可靠，与发布时间和热度无关。</p>
+</div>
+<div class="mech">
+<h3>热度排序</h3>
+<p>板块内的热门列表综合阅读完成度、有效讨论数量与收藏行为计算，短期内的集中点击不会带来明显加权，避免标题党挤占版面。</p>
+</div>
+<div class="mech">
+<h3>主题周期</h3>
+<p>围绕新番开播、版本更新、展会举办等节点，站点会提前开设主题页，把相关讨论、创作与资料集中呈现，方便一次看完一个话题的全貌。</p>
+</div>
+<div class="mech">
+<h3>创作者扶持</h3>
+<p>持续输出原创内容的作者会获得展示位与专题约稿机会，编辑会给出选题建议与排版帮助，让好内容被看见的过程更省力。</p>
+</div>
+<div class="mech">
+<h3>质量回溯</h3>
+<p>被多次反馈存在错误或侵权的内容会重新审核，修订后的版本保留更新记录。内容质量由社区与编辑共同维护，而不是一次发布定终身。</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="guide">
+<div class="wrap">
+<h2>新手指南</h2>
+<p class="section-lead">第一次来不必急着发言，按下面的顺序走一遍，基本就能摸清站点的脾气。</p>
+<ol class="steps">
+<li>先读一遍社区公约，重点看剧透标注、转载授权与商业推广三条，这三条是最容易踩线的地方。</li>
+<li>在个人设置里选择感兴趣的作品与题材标签，内容广场会据此调整呈现顺序，找同好比翻列表快得多。</li>
+<li>逛一逛想去的板块，看看置顶说明与其他人的发帖格式，了解这个板块习惯怎么组织内容。</li>
+<li>从评论开始参与，先就具体细节说一两句真实感受，比只留一句好评更容易聊起来。</li>
+<li>准备发布第一篇内容时，标题写清讨论对象，正文分段表达，涉及剧情处补上提示。</li>
+<li>发布后留意回复，有人提出不同看法时先确认对方说的是哪一段，再决定是否需要补充说明。</li>
+</ol>
+<ul class="tips">
+<li>标题尽量具体，写清作品名与讨论角度，比笼统的感叹更容易被检索到。</li>
+<li>图片建议按内容顺序排列，并在正文中说明每张图的重点，阅读体验会顺畅很多。</li>
+<li>引用他人观点时保留原意并注明出处，转述与原文混在一起容易引发误会。</li>
+<li>遇到不熟悉的板块规则，先看置顶帖，多数问题在那里已有答案。</li>
+</ul>
+</div>
+</section>
+<section class="section" id="faq">
+<div class="wrap">
+<h2>常见问题</h2>
+<div class="faq-head">
+<p>以下问题来自社区反馈中出现频率较高的几类，若仍有疑问可通过页面反馈入口说明情况。</p>
+<button class="btn" id="faq-toggle" type="button">展开全部问答</button>
+</div>
+<details class="faq-item">
+<summary>参与社区需要付费吗</summary>
+<p>浏览公开板块与参与常规讨论不涉及费用，站点主要通过内容展示与社区活动维持运转，具体功能的开放范围以页面实际说明为准。</p>
+</details>
+<details class="faq-item">
+<summary>发布作品有哪些基本要求</summary>
+<p>作品需为本人创作，或已取得原作者授权；使用字体、素材、音乐等第三方内容时，应在正文注明来源与授权情况。涉及他人形象的照片需获得当事人同意。</p>
+</details>
+<details class="faq-item">
+<summary>怎样让内容获得更多展示</summary>
+<p>把标题写具体、把观点讲完整、把标签选准确，是最实际的三件事。编辑精选不看发布时间，只看内容是否值得被更多人读到，因此修订旧文同样有机会被推荐。</p>
+</details>
+<details class="faq-item">
+<summary>被恶意评论困扰怎么办</summary>
+<p>可在评论旁使用举报入口，说明具体问题所在。编辑会在核实后处理，并对反复出现的账号采取限制措施。不建议在评论区与对方长时间争执，保留证据更有效。</p>
+</details>
+<details class="faq-item">
+<summary>可以转载站外的作品吗</summary>
+<p>可以，但必须取得授权或符合原作者公开的转载条款，转载时完整保留署名与出处，不得删改原意，也不得加注自己的署名。无法确认来源的内容请不要发布。</p>
+</details>
+<details class="faq-item">
+<summary>剧透内容如何标注</summary>
+<p>在标题或标签中写明涉及的作品与范围，例如标注到具体集数或章节，并在正文开头留出提示段。未标注的帖子会由编辑补充提示标签，多次发生会影响推荐。</p>
+</details>
+<details class="faq-item">
+<summary>发现违规内容怎样反馈</summary>
+<p>通过内容旁的反馈入口提交，说明违规类型与位置即可，无需重复提交。处理结果会说明依据条款，对结果有异议可在同一入口提交补充材料再次复核。</p>
+</details>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-inner">
+<div>
+<p>宅宅网 · 二次元兴趣社区</p>
+<p>本页为站点介绍与使用说明页，内容随社区规则调整同步更新。</p>
+</div>
+<div class="footer-links">
+<a href="#about">站点介绍</a>
+<a href="#rules">社区公约</a>
+<a href="#guide">新手指南</a>
+<a href="#faq">常见问题</a>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var button = document.getElementById("faq-toggle");
+  var items = document.querySelectorAll(".faq-item");
+  var expanded = false;
+  if (!button) {
+    return;
+  }
+  button.addEventListener("click", function () {
+    expanded = !expanded;
+    var index = 0;
+    while (index < items.length) {
+      items[index].open = expanded;
+      index = index + 1;
+    }
+    button.textContent = expanded ? "收起全部问答" : "展开全部问答";
+  });
+});
+</script>
+</body>
+</html>
